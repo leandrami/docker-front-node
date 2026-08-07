@@ -1,9 +1,0 @@
-services:
-  
-  frontend:  # nome do serviço/container do frontend
-
-    build: .
-
-    ports:
-      # Mapeia a porta 8080 da máquina para a porta 80 do container (padrão do Nginx)
-      - "8080:80"
