@@ -1,4 +1,4 @@
-#     Build da aplicação 
+######     Build da aplicação 
 
 FROM node:20-alpine AS build 
 # Imagem base com Node, usada só para instalar dependências e gerar o build (chamada de "build")
@@ -20,7 +20,7 @@ RUN npm run build
 
 
 
-#     Servir com Nginx
+######     Servir com Nginx
 
 FROM nginx:alpine
 # Nova imagem, agora só com o Nginx, para servir os arquivos finais (descarta tudo da etapa anterior)
